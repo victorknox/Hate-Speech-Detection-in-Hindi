@@ -1,5 +1,5 @@
 SYNSET = []
-with open('data.txt') as f:
+with open('Synset.txt') as f:
     for line in f:
         x = line.split()
         x[3] = x[3].split(':')
@@ -9,7 +9,7 @@ NegativePolarityWords = []
 for line in SUBJCLUE:
     totalscore = int(line[2]) - int(line[3])
     if(totalscore < 0):
-        NegativePolarityWords += line
+        NegativePolarityWords.append(line)
 
 def Getsynset(word):
     syn = []
@@ -31,5 +31,5 @@ hlex = []
 for word in slist:
     s = Getsynset(word)
     for verb1 in s:
-        hlex.append(verb1)
-# print(hlex)
+        if verb1 in verbs_content:
+            hlex.append(verb1)
