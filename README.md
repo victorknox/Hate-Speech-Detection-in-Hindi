@@ -82,8 +82,8 @@ which is beyond the scope of our rule-based algorithm. However, we find we can
 achieve a healthy precision in not just the detection of hate speech, but also its 
 segregation into weakly or strongly hateful speech. 
 
-We use the paper linked here as reference to build a tool that searches a Hindi 
-corpus (in this case, a collection of tweets - the corpus we used can be found here)
+We use the paper linked [here](https://gvpress.com/journals/IJMUE/vol10_no4/21.pdf) as reference to build a tool that searches a Hindi 
+corpus (in this case, a collection of tweets - the corpus we used can be found [here](https://github.com/mohit19014/Hindi-Hostility-Detection-CONSTRAINT-2021/blob/main/Dataset/valid.csv))
 for hate speech and then categorizes the tweets into “weakly hateful”, “strongly
 hateful” or “no hate” based on the amount of hate content present.
 
